@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('conthrax-sb.otf') format('opentype');
+    /* or use the format('truetype') for TTF files */
+  }
+
+  html, body {
+    font-family: 'CustomFont', Arial, sans-serif;
+  }
+  
+  .container-fluid {
+    overflow-x: hidden;
+  }
+  
+  .section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+  
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .section-content {
+    text-align: center;
+  }
+  
+  .section-heading h4 {
+    color: #00C2FF;
+    font-size: 35px;
+    text-align: right;
+    margin: 0;
+    opacity: 0;
+    animation: float-in 1s forwards;
+  }
+  
+  .section-heading h1 {
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-size: 138px;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+  }
+  
+  @keyframes float-in {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .next-section-button {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .next-section-button i {
+    margin-right: 8px;
+  }
+
+  #v2{
+    width: 190%;
+    float: right;
+  }
+  .section-heading h2 {
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-size: 48px;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+  }
+  @keyframes fold-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .image-container {
+    position: relative;
+    animation: fold-in 1s ease-out;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 90%;
+    height: auto;
+    padding: 30px;
+  }
+  
+  .image-container .image-text {
+    font-family: 'CustomFont', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00C2FF;
+    font-size: 38px;
+    text-align: center;
+  }
+#v3{
+   
+  top: 70px;
+  left:-280px;
+  width: 80%;
+  height: 80%;
+
+  clip-path: circle(30% at center);
+}
+#col1 h2,h4{
+ padding-left: 190px;
+}
+#col1 h4{
+  padding: 60px;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 190px;
+}
+#col1 h2{ 
+  font-size: 48 px;
+}
+.footer {
+  background-color: #0d3753;
+  padding: 10px ;
+  
+}
+
+.footer-logo {
+  height: 70px;
+  width: auto;
+
+}
+
+.footer-text,
+.footer-contact,
+.footer-email,
+.footer-link {
+  margin: 0;
+}
+
+.footer-text {
+  font-family: 'CustomFont', Arial, sans-serif;
+  letter-spacing: 4px;
+  position: relative;
+  z-index: 2;
+  margin-top: -40px;
+}
+p{
+  color: #2f8099;
+  font-size:25px;
+}
+#o{
+  width: 30%;
+  
+  
+}

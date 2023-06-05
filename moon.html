@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moon Walker</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style5.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="text-center">Kepler</h1>
+      </div>
+  <div class="container-fluid p-0">
+    <section class="section">
+     
+        <div class="section-content">
+            <div class="section-heading">
+              <h4>
+                There's no place for you,</h4>
+                <h4>
+                    The moon might be full.</h4>
+            </div>
+      </div>
+    </section>
+    <section class="section">
+        <div class="row">
+        
+            <video src="moon_vid.mp4" autoplay muted loop id="v3"></video>
+        
+         
+            <div class="content">
+              <div class="section-content">
+                <div class="section-heading" id="col1">
+                 
+                    <h2>
+                        Walk to Moon >
+                        </h2>
+                    <h4>Approx steps remaining:</h4>
+                    <h2 id="text1">1239493</h2>
+                    <h4>Time of arrival:</h4>
+                    <h2 id="text12">2023</h2>
+                 
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="kepler logo.png" alt="Logo" class="footer-logo">
+              <h3 class="footer-text">Kepler</h3>
+            </div>
+            <div class="col-md-4 text-center">
+              <p class="footer-contact">Contact Us</p>
+              <p class="footer-email">connect@kepler.org</p>
+            </div>
+            <div class="col-md-4 text-right">
+              <p class="footer-link">Terms and Conditions</p>
+              <p class="footer-link">Privacy Policy</p>
+                
+            </div>
+            
+          </div>
+        </div>
+      </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+  let startNum = 0;
+let endNum = 244134707;
+
+let startNum1 = 2023;
+let endNum1 = 4707;
+const duration = 100; // Change the duration to a reasonable value, such as 100 milliseconds
+
+document.addEventListener("DOMContentLoaded", function() {
+    setInterval(() => {
+        countUp();
+        countUp2();
+    }, duration);
+});
+
+function countUp() {
+    if (startNum <= endNum) {
+        document.getElementById('text1').textContent = startNum.toLocaleString();
+        startNum += 1000;
+    }
+}
+
+function countUp2() {
+    if (startNum1 <= endNum1) {
+        document.getElementById('text12').textContent = startNum1.toLocaleString();
+        startNum1 += 10;
+    }
+}
+
+  </script>
+</body>
+</html>
